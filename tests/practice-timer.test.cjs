@@ -1,0 +1,4 @@
+const test=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const t=require('../practice-timer.js');
+test('pause, reprise, réouverture et correction d’horloge',()=>{let s=t.start(t.clean(null),1000);a.equal(t.elapsed(s,61000).piano,60000);s=t.pause(s,61000);a.equal(t.elapsed(s,121000).piano,60000);s=t.start(s,121000);a.equal(t.report(JSON.parse(JSON.stringify(s)),181000).minutes,2);a.equal(t.elapsed(s,120000).piano,60000)});
+test('deux natures et nouveau chrono après report sans double décompte',()=>{let s=t.start(t.clean(null),1000);s=t.switchMode(s,'off',121000);a.deepEqual(t.report(s,181000),{pianoMinutes:2,offPianoMinutes:1,minutes:3,activityMode:'mixed'});s=t.pause(s,181000);s.reported=true;a.equal(t.report(t.start(s,200000),260000).minutes,1)});
