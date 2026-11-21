@@ -22,7 +22,7 @@ Le journal, les filtres, les sauvegardes JSON et l’export CSV conservent cette
 
 Les méthodes, audios et références privées restent dans Drive et dans les données personnelles. Ils ne sont pas recopiés dans ce dépôt public. La version Sites privée charge le catalogue automatiquement. Sur GitHub Pages, importer le fichier personnel de ressources dans **Réglages > Importer mes ressources**. Il contient les références des deux méthodes et la collection initiale de 65 fiches / 77 supports. Une réimportation ne remplace pas les fiches déjà personnalisées et n’ajoute aucun historique de pratique.
 
-Les documents s’ouvrent directement dans Drive avec le compte Google autorisé. Le suivi est enregistré dans ce navigateur ; Sites et GitHub ont des stockages distincts. Le raccordement à la synchronisation du tableau de bord constitue l’étape suivante.
+Les documents s’ouvrent directement dans Drive avec le compte Google autorisé. Le suivi est enregistré dans ce navigateur ; Sites et GitHub ont des stockages distincts. La synchronisation privée du tableau de bord est disponible : toucher **☁ Connecter mon suivi**, puis utiliser l’accès Piano habituel. Les dates, durées réparties, validations et compteurs sont transmis à Supabase ; les liens Drive et le contenu des fiches restent dans cette app. Une correction ou suppression remplace les chiffres précédents sans ajouter de séance. Le tableau de bord s’actualise à son ouverture, au retour sur la page et toutes les 30 secondes lorsqu’il est visible. Les sauvegardes restent nécessaires pour transférer le suivi complet entre les stockages Sites et GitHub. Une journée uniquement hors piano n’ajoute aucune heure de classique estimée.
 
 ## Publication et vérification
 
